@@ -444,49 +444,6 @@ export const Landing = () => {
         </div>
       </section>
 
-      {/* Interactive AI Clarity Section */}
-      <section id="ai-experience" className="py-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto w-full">
-        <div className="bg-gradient-to-tr from-[#0D0F0D] via-[#12141A] to-[#1E2538] text-white rounded-4xl p-8 sm:p-12 relative overflow-hidden shadow-sd-xl">
-          
-          <div className="max-w-xl relative z-10 mb-8">
-            <Badge variant="cyan" size="md" icon={Sparkles} className="mb-4">
-              AI Classroom Co-Pilot
-            </Badge>
-            <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-white mb-4">
-              Structured Concept Breakdowns on Demand
-            </h2>
-            <p className="text-sm text-slate-300 leading-relaxed font-normal">
-              When complex theoretical doubts arise, DoubtFlow structures explanations with step-by-step logic, real-world analogies, and actionable key takeaways.
-            </p>
-          </div>
-
-          {/* AI Dialogue Walkthrough Card */}
-          <div className="bg-white/10 backdrop-blur-md border border-white/15 rounded-3xl p-6 space-y-4 max-w-3xl">
-            <div className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-full bg-[#9BE5E3] text-[#0D0F0D] flex items-center justify-center font-bold text-xs">
-                Q
-              </div>
-              <p className="text-sm font-semibold text-white">
-                "What is the difference between starvation and deadlock in process scheduling?"
-              </p>
-            </div>
-
-            <div className="pl-11 border-l-2 border-[#3DA8A5] space-y-3">
-              <div className="bg-white/5 rounded-2xl p-4 text-xs space-y-2 border border-white/10">
-                <span className="font-bold text-[#9BE5E3] uppercase tracking-wider block text-[10px]">
-                  ✓ Key Distinction:
-                </span>
-                <p className="text-slate-200">
-                  <strong>Deadlock:</strong> Two or more processes are permanently blocked waiting for resources held by each other. No progress can ever be made without external intervention.
-                </p>
-                <p className="text-slate-200">
-                  <strong>Starvation:</strong> A process is perpetually delayed because higher priority processes continuously preempt it, though the system as a whole continues making progress.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Bottom CTA Banner */}
       <section className="py-12 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto w-full">
