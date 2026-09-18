@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-[#F5F7F8] text-[#0D0F0D] min-h-screen font-sans;
+  }
+}
+
+/* ── SD Brand: Soft dual-tone pastel gradient utility ── */
+.sd-gradient-bg {
+  background: linear-gradient(135deg, #FEF9E8 0%, #F5F7F8 45%, #E6FAF9 100%);
+}
+
+.sd-hero-bg {
+  background: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(246,228,159,0.25) 0%, transparent 70%),
+              radial-gradient(ellipse 70% 50% at 90% 60%, rgba(155,229,227,0.22) 0%, transparent 65%),
+              #F5F7F8;
+}
+
+.sd-glow-cyan {
+  box-shadow: 0 0 40px rgba(155, 229, 227, 0.38);
+}
+
+.sd-glow-yellow {
+  box-shadow: 0 0 40px rgba(246, 228, 159, 0.42);
+}
+
+/* SD brand gradient text */
+.sd-gradient-text {
+  background: linear-gradient(135deg, #C9A830 0%, #3DA8A5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Custom Minimal Scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4D6DC;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A8ABB4;
+}
+
+/* Micro-interaction animations */
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
+.animate-float {
+  animation: float-slow 4s ease-in-out infinite;
+}
+
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.88; transform: scale(1.02); }
+}
+.animate-pulse-subtle {
+  animation: pulse-subtle 2.5s infinite ease-in-out;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+.animate-shimmer {
+  background: linear-gradient(90deg, #F5F7F8 25%, #E8EEF1 50%, #F5F7F8 75%);
+  background-size: 200% auto;
+  animation: shimmer 1.6s linear infinite;
+}
+
+/* Frosted glass */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(228, 232, 238, 0.85);
+}
