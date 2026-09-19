@@ -45,7 +45,6 @@ export const Landing = () => {
             <a href="#features" className="hover:text-[#0D0F0D] transition-colors">Features</a>
             <a href="#preview" className="hover:text-[#0D0F0D] transition-colors">Demo</a>
             <a href="#how-it-works" className="hover:text-[#0D0F0D] transition-colors">How It Works</a>
-            <a href="#ai-experience" className="hover:text-[#0D0F0D] transition-colors">AI Intelligence</a>
           </nav>
 
           {/* Right Action Buttons */}
@@ -119,7 +118,7 @@ export const Landing = () => {
             <div className="w-7 h-7 rounded-full bg-[#F6E49F] border-2 border-white flex items-center justify-center text-[10px] font-bold text-[#0D0F0D]">PS</div>
             <div className="w-7 h-7 rounded-full bg-[#A6C8DE] border-2 border-white flex items-center justify-center text-[10px] font-bold text-[#0D0F0D]">SS</div>
           </div>
-          <span>Trusted by 5,000+ students and professors</span>
+        
         </div>
       </section>
 
@@ -280,7 +279,7 @@ export const Landing = () => {
                 <div className="flex items-center gap-2 mb-2">
                   <Sparkles className="w-4 h-4 text-[#7A620E]" />
                   <span className="text-xs font-bold text-[#7A620E] uppercase tracking-wider">
-                    AI Concept Simplifier
+                     Concept Simplifier
                   </span>
                 </div>
                 <p className="text-xs text-[#3D3F4A] leading-relaxed">
@@ -292,35 +291,6 @@ export const Landing = () => {
         </div>
       </section>
 
-      {/* Trust & Social Proof Metrics */}
-      <section className="py-12 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto w-full">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
-          <StatCard
-            label="Doubts Solved"
-            value="10,000+"
-            color="cyan"
-            description="Across active lectures"
-          />
-          <StatCard
-            label="Comfort Score"
-            value="99.4%"
-            color="warm"
-            description="Students feel safer asking"
-          />
-          <StatCard
-            label="Lecture Momentum"
-            value="0 Interruption"
-            color="blue"
-            description="Zero spoken disruptions"
-          />
-          <StatCard
-            label="Privacy Standard"
-            value="100% Anon"
-            color="primary"
-            description="Identity stripped on WS"
-          />
-        </div>
-      </section>
 
       {/* Features Matrix Section */}
       <section id="features" className="py-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto w-full">
